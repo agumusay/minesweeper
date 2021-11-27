@@ -5,23 +5,22 @@ export interface LegendProps {
 	/**
 	 * Feature that should be activated after first+second actions
 	 */
-
 	feature: string;
 	/**
-	 * First Action
+	 * First action
 	 */
 	firstAction: string;
 	/**
-	 * Second Action
+	 * Second action
 	 */
 	secondAction: string;
 }
 
 export const Legend: FC<LegendProps> = ({ feature, firstAction, secondAction }) => (
 	<Parent>
-		<strong>{feature}</strong>:
+		<strong>{feature}: </strong>
 		<FlagComboParent>
-			<FirstAction>{firstAction}</FirstAction>+<SecondAction>{secondAction}</SecondAction>
+			<FirstAction>{firstAction}</FirstAction> + <SecondAction>{secondAction}</SecondAction>
 		</FlagComboParent>
 	</Parent>
 );

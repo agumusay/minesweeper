@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
+
 import { Top, TopComponentType } from './Top';
-import { features } from 'process';
 
 export default {
 	title: 'Top/Top',
@@ -11,7 +11,6 @@ export default {
 const Template: Story<TopComponentType> = args => <Top {...args} />;
 
 export const TopPanel = Template.bind({});
-
 TopPanel.args = {
 	children: 'minesweeper',
 	feature: 'Flag',

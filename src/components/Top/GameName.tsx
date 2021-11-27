@@ -4,7 +4,6 @@ export interface GameNameProps {
 	/**
 	 * Text inside the header
 	 */
-
 	children: string;
 }
 
